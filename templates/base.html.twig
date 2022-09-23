@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}{% endblock %}</title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
@@ -15,6 +15,43 @@
         {% endblock %}
     </head>
     <body>
+    <header>
+        <div bis_skin_checked="1">
+            <a href="index.html" class="header-logo-container">
+                <img src="./assets/img/logo-text.png" alt="logo" class="">
+            </a>
+            <nav id="menu-nav">
+                <a href="/" class="">Accueil</a>
+                <a href="/carte" class="">Carte</a>
+                <a href="/contact" class="">Contact</a>
+            </nav>
+            <nav id="menu-burger-nav">
+                <a href="/" class="">Accueil</a>
+                <a href="/carte" class="">Carte</a>
+                <a href="/contact" class="">Contact</a>
+            </nav>
+            <img src="./assets/img/burger.svg" alt="menu" id="burger-icon">
+            <div id="burger-overlay"></div>
+        </div>
+    </header>
         {% block body %}{% endblock %}
+        <footer>
+            <section>
+                <div>
+                    <a href="index.html" class="footer-logo-container">
+                        <img src="./assets/img/logo-text.png" alt="logo" class="">
+                    </a>
+                    <p>16 Terrasse de l'Arche <br>
+                        92000 Nanterre</p>
+                    <p>01 47 25 45 97</p>
+                </div>
+                <nav>
+                    <a href="/" class="">Accueil</a>
+                    <a href="/carte" class="">Carte</a>
+                    <a href="/contact" class="">Contact</a>
+                </nav>
+            </section>
+        </footer>
     </body>
+    <script src="./assets/app.js"></script>
 </html>

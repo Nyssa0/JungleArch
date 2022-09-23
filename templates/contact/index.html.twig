@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body %}
+    <div class="pageContact">
+        <div class="wrap">
+            <h2>Nous contacter</h2>
+            <p>Vous désirez nous contacter ? <br>Remplissez le formulaire ci-dessous !</p>
+            <form action="">
+                <input type="text" id="fname" name="firstname" placeholder="Prénom">
+                <input type="text" id="lname" name="lastname" placeholder="Nom">
+                <input type="text" id="phone" name="phone" placeholder="Téléphone">
+                <input type="email" id="email" name="email" placeholder="Email">
+                <input class="button" type="submit" value="Envoyer">
+            </form>
+            <div class="calendar">
+                <h3>Horaires</h3>
+                <div class="hours week">
+                    <p>LUNDI - VENDREDI</p>
+                    <p>07:30 - 00:00</p>
+                </div>
+                <div class="hours weekend">
+                    <p>SAMEDI - DIMANCHE</p>
+                    <p>Fermé</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

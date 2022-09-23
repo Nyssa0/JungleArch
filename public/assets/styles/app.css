@@ -1,3 +1,499 @@
-.test{
-  background-color: red;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.pageHome .leaf-1, .pageHome .leaf-2, .pageHome .leaf-3, .pageHome .leaf-4 {
+  z-index: -1;
+  position: absolute;
+}
+.pageHome .home-background {
+  min-height: 800px;
+  max-height: 100vh;
+  background-image: url("../img/background-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12rem;
+}
+.pageHome .home-background h1 {
+  text-align: center;
+  color: white;
+}
+.pageHome .home-meal {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 12rem;
+}
+.pageHome .home-meal .leaf-1 {
+  top: -230px;
+  right: -150px;
+}
+.pageHome .home-meal .leaf-2 {
+  bottom: -230px;
+  left: -230px;
+}
+@media screen and (max-width: 640px) {
+  .pageHome .home-meal .leaf-2 {
+    width: 70%;
+    bottom: -120px;
+  }
+}
+.pageHome .home-meal .meal, .pageHome .home-meal div {
+  width: 44rem;
+  margin: 2rem 3rem;
+  max-width: 100%;
+}
+.pageHome .home-meal div {
+  min-height: 36rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.pageHome .home-meal div p {
+  text-align: center;
+}
+.pageHome .home-experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12rem;
+  text-align: justify;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 12rem;
+}
+.pageHome .home-experience h2 {
+  margin-bottom: 2rem;
+}
+.pageHome .home-masonry {
+  position: relative;
+  margin: auto;
+  width: 84rem;
+  height: 62rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin-bottom: 12rem;
+}
+.pageHome .home-masonry .leaf-3 {
+  top: -200px;
+  right: -390px;
+}
+@media screen and (max-width: 640px) {
+  .pageHome .home-masonry .leaf-3 {
+    width: 80%;
+    top: -130px;
+    right: -230px;
+  }
+}
+.pageHome .home-masonry .leaf-4 {
+  bottom: -290px;
+  left: -400px;
+}
+@media screen and (max-width: 1024px) {
+  .pageHome .home-masonry {
+    width: 60rem;
+    height: 46rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pageHome .home-masonry {
+    width: 40rem;
+    height: 30rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .pageHome .home-masonry {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 194rem;
+  }
+}
+.pageHome .home-masonry .item-1 {
+  grid-area: 1/1/3/2;
+}
+@media screen and (max-width: 640px) {
+  .pageHome .home-masonry .item-1 {
+    grid-area: 1/1/2/2;
+  }
+}
+.pageHome .home-masonry .item-2 {
+  grid-area: 3/1/5/2;
+}
+@media screen and (max-width: 640px) {
+  .pageHome .home-masonry .item-2 {
+    grid-area: 2/1/3/2;
+  }
+}
+.pageHome .home-masonry .item-3 {
+  grid-area: 5/1/7/2;
+}
+@media screen and (max-width: 640px) {
+  .pageHome .home-masonry .item-3 {
+    grid-area: 3/1/4/2;
+  }
+}
+.pageHome .home-masonry .item-4 {
+  grid-area: 1/2/4/3;
+}
+@media screen and (max-width: 640px) {
+  .pageHome .home-masonry .item-4 {
+    grid-area: 4/1/5/2;
+  }
+}
+.pageHome .home-masonry .item-5 {
+  grid-area: 4/2/7/3;
+}
+@media screen and (max-width: 640px) {
+  .pageHome .home-masonry .item-5 {
+    grid-area: 1/2/2/3;
+  }
+}
+.pageHome .home-masonry .item-6 {
+  grid-area: 1/3/3/4;
+}
+@media screen and (max-width: 640px) {
+  .pageHome .home-masonry .item-6 {
+    grid-area: 2/2/3/3;
+  }
+}
+.pageHome .home-masonry .item-7 {
+  grid-area: 3/3/5/4;
+}
+@media screen and (max-width: 640px) {
+  .pageHome .home-masonry .item-7 {
+    grid-area: 3/2/4/3;
+  }
+}
+.pageHome .home-masonry .item-8 {
+  grid-area: 5/3/7/4;
+}
+@media screen and (max-width: 640px) {
+  .pageHome .home-masonry .item-8 {
+    grid-area: 4/2/5/3;
+  }
+}
+.pageHome .home-masonry .masonry-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pageHome .home-map {
+  background-image: url("../img/home-map-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem 3rem;
+  margin: auto;
+  max-width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 12rem;
+}
+.pageHome .home-map div {
+  height: 100%;
+  min-height: 37rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  color: white;
+}
+.pageHome .home-map iframe {
+  width: 600px;
+  height: 450px;
+}
+
+header {
+  width: 100%;
+  background-color: #000F0E;
+}
+header div {
+  width: 90%;
+  padding: 2rem 0;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header div .header-logo-container img {
+  width: 16rem;
+}
+header div #menu-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 640px) {
+  header div #menu-nav {
+    display: none;
+  }
+}
+header div #menu-nav a:nth-of-type(1), header div #menu-nav a:nth-of-type(2) {
+  margin-right: 6rem;
+}
+header div #menu-burger-nav {
+  display: flex;
+  padding-top: 10rem;
+  font-size: 3rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #000F0E;
+  height: 100%;
+  width: 70%;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  transform: translateX(100%);
+  transition: 0.3s ease-in-out;
+}
+header div #menu-burger-nav a {
+  margin: 2rem 0;
+}
+header div #burger-overlay {
+  top: 0;
+  left: 0;
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+header div .burger-overlay--active {
+  display: block !important;
+}
+header div .menu-burger-nav--active {
+  transform: translateX(0%) !important;
+}
+header div #burger-icon {
+  display: none;
+}
+@media screen and (max-width: 640px) {
+  header div #burger-icon {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: #000F0E;
+  margin-bottom: -10rem;
+}
+footer section {
+  width: 90%;
+  padding: 2rem 0;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  flex-wrap: wrap;
+}
+footer section div {
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+footer section div .footer-logo-container img {
+  width: 16rem;
+}
+footer section nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  footer section nav {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 16rem;
+  }
+}
+footer section nav a:nth-of-type(1), footer section nav a:nth-of-type(2) {
+  margin-right: 6rem;
+}
+@media screen and (max-width: 768px) {
+  footer section nav a:nth-of-type(1), footer section nav a:nth-of-type(2) {
+    margin-right: 0;
+  }
+}
+
+.pageContact {
+  padding-top: 50px;
+  margin-bottom: 10rem;
+}
+.pageContact .wrap {
+  max-width: 37rem;
+  margin: auto;
+  text-align: center;
+}
+.pageContact .wrap h2 {
+  margin-bottom: 20px;
+}
+.pageContact .wrap form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 50px 0;
+}
+.pageContact .wrap form input {
+  border: none;
+  outline: none;
+}
+.pageContact .wrap form input[type=text], .pageContact .wrap form input[type=email], .pageContact .wrap form input[type=datetime-local] {
+  background-color: #F3F4F6;
+  padding: 10px 20px;
+}
+.pageContact .wrap form input[type=submit] {
+  margin: auto;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.pageContact .calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pageContact .calendar h3 {
+  font-size: 24px;
+}
+.pageContact .calendar p {
+  font-size: 18px;
+}
+.pageContact .calendar .hours {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #bababa;
+  padding-bottom: 10px;
+}
+.pageContact .calendar .hours p:first-of-type {
+  color: grey;
+}
+
+@font-face {
+  font-family: SkullBones;
+  src: url("../font/skullFont.ttf");
+}
+html, body {
+  max-width: 100%;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 768px) {
+  html, body {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 640px) {
+  html, body {
+    font-size: 8px;
+  }
+}
+
+body {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  font-size: 1.75rem;
+}
+
+h1 {
+  font-size: 6rem;
+  font-family: "SkullBones", sans-serif;
+  line-height: 10rem;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.button {
+  width: fit-content;
+  color: white;
+  padding: 1rem 3rem;
+  background-color: #00C4B1;
+  border-radius: 0.75rem;
+  font-size: 1.75rem;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,13 +1,14 @@
 // assets/app.js
-/*
- * Welcome to your app's main JavaScript file!
- *
- * We recommend including the built version of this JavaScript file
- * (and its CSS file) in your base layout (base.html.twig).
- */
+const burgerOverlay = document.querySelector('#burger-overlay');
+const burgerIcon = document.querySelector('#burger-icon');
+const menuBurgerNav = document.querySelector('#menu-burger-nav');
 
-// any CSS you import will output into a single css file (app.css in this case)
-import './styles/app.css';
+burgerIcon.addEventListener('click', () => {
+    burgerOverlay.classList.add('burger-overlay--active');
+    menuBurgerNav.classList.add('menu-burger-nav--active');
+});
 
-// start the Stimulus application
-import './bootstrap';
+burgerOverlay.addEventListener('click', () => {
+    burgerOverlay.classList.remove('burger-overlay--active');
+    menuBurgerNav.classList.remove('menu-burger-nav--active');
+});

@@ -12,7 +12,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class MenuController extends AbstractController
 {
     /**
-     * @Route("/menu", name="app_menu")
+     * @Route("/carte", name="app_menu")
      */
     public function index(MenuRepository $menuRepository, DishCategoryRepository $dishCategoryRepository, DishSubCategoryRepository $dishSubCategoryRepository): Response
     {
