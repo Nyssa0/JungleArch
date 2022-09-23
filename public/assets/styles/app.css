@@ -411,7 +411,7 @@ footer section nav a:nth-of-type(1), footer section nav a:nth-of-type(2) {
   border: none;
   outline: none;
 }
-.pageContact .wrap form input[type=text], .pageContact .wrap form input[type=email], .pageContact .wrap form input[type=datetime-local], form textarea {
+.pageContact .wrap form input[type=text], .pageContact .wrap form input[type=email],.pageContact .wrap form input[type=tel], .pageContact .wrap form input[type=datetime-local], form textarea {
   background-color: #F3F4F6;
   padding: 10px 20px;
   resize: none;
@@ -497,6 +497,7 @@ h2 {
   padding: 1rem 3rem;
   background-color: #00C4B1;
   border-radius: 0.75rem;
+  border: none;
   font-size: 1.75rem;
 }
 
