@@ -29,12 +29,13 @@ class Menu
 
     /**
      * @ORM\ManyToOne(targetEntity=DishCategory::class, inversedBy="Dishes")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $Category;
 
     /**
      * @ORM\ManyToOne(targetEntity=DishSubCategory::class, inversedBy="plats")
+     * @ORM\JoinColumn(nullable=false)
      */
     private $SubCategory;
 

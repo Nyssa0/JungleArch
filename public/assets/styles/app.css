@@ -645,4 +645,15 @@ h2 {
   color: #b46a39;
 }
 
+.leaf-0 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 6rem 0;
+}
+
+.leaf-0 img {
+  width: 50%;
+}
+
 /*# sourceMappingURL=style.css.map */

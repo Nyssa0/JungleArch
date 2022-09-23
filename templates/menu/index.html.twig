@@ -6,10 +6,10 @@
 
 <div class="menu">
     <h1 class="menu-title">Menu</h1>
-    <img src="./assets/img/leaf-1.png" alt="leaf-1" class="leaf-1">
-    <img src="./assets/img/leaf-2.png" alt="leaf-2" class="leaf-2">
-    <img src="./assets/img/leaf-3.png" alt="leaf-3" class="leaf-3">
-    <img src="./assets/img/leaf-4.png" alt="leaf-4" class="leaf-4">
+    <div class="leaf-0">
+        <img src="./assets/img/leaf-0.png" alt="leaf-0">
+    </div>
+
     
     {% for subCategory in subCategories %}
         <h2 class="menu-category"> {{ subCategory.name }} </h2>
@@ -30,7 +30,9 @@
         </div>
         {% endfor %}
     {% endfor %}
-
+    <div class="leaf-0">
+        <img src="./assets/img/leaf-0.png" alt="leaf-0">
+    </div>
 </div>
 
 {% endblock %}
