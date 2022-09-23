@@ -502,6 +502,7 @@ form textarea {
 }
 .pageContact .wrap form input[type="text"],
 .pageContact .wrap form input[type="email"],
+.pageContact .wrap form input[type="tel"],
 .pageContact .wrap form input[type="datetime-local"],
 form textarea {
   background-color: #f3f4f6;
@@ -511,7 +512,7 @@ form textarea {
 form textarea {
   height: 5rem;
 }
-.pageContact .wrap form input[type="submit"] {
+.pageContact .wrap form button[type="submit"] {
   margin: auto;
   cursor: pointer;
   margin-top: 10px;
