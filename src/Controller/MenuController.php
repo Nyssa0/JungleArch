@@ -20,6 +20,8 @@ class MenuController extends AbstractController
         $categories = $dishCategoryRepository->findAll();
         $subCategories = $dishSubCategoryRepository->findAll();
 
+
+
         return $this->render('menu/index.html.twig', [
             'plats' => $plats,
             'categories' => $categories,

@@ -4,26 +4,33 @@
 
 {% block body %}
 
-<div>
-    <h1>Menu</h1>
-    {% for category in categories %}
-        <h2>{{ category.name }}</h2>
-
-        {% for subCategory in subCategories %}
-            {% if category.subCategory == subCategory.name %}
-                <h3>{{ subCategory.name }}</h3>
-
-                    {% for plat in plats %}
-                        {% if plat.category == category.name %}
-                            <h3>{{ plat.name }}</h3>
-                            {{ plat.description|raw }}
-                        {% endif %}
-                    {% endfor %}
-
-            {% endif %}
+<div class="menu">
+    <h1 class="menu-title">Menu</h1>
+    <img src="./assets/img/leaf-1.png" alt="leaf-1" class="leaf-1">
+    <img src="./assets/img/leaf-2.png" alt="leaf-2" class="leaf-2">
+    <img src="./assets/img/leaf-3.png" alt="leaf-3" class="leaf-3">
+    <img src="./assets/img/leaf-4.png" alt="leaf-4" class="leaf-4">
+    
+    {% for subCategory in subCategories %}
+        <h2 class="menu-category"> {{ subCategory.name }} </h2>
+        {% for category in subCategory.dishCategories %}
+        <div class="menu-div">
+            <p class="menu-subCategory">{{ category.name }}</p>
+            {% for dishe in category.dishes %}
+            <div class="menu-dishe">
+                <div class="menu-dishe-left">
+                    <p class="menu-name">{{ dishe.name }}</p>
+                    <p class="menu-description">{{ dishe.description|raw }}</p>
+                </div>
+                <div class="menu-dishe-right">
+                    <p class="menu-price">{{ dishe.price }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
         {% endfor %}
-
     {% endfor %}
+
 </div>
 
 {% endblock %}

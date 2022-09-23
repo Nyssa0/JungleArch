@@ -1,17 +1,85 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -21,8 +89,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -30,16 +107,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -49,7 +130,10 @@ table {
   border-spacing: 0;
 }
 
-.pageHome .leaf-1, .pageHome .leaf-2, .pageHome .leaf-3, .pageHome .leaf-4 {
+.leaf-1,
+.leaf-2,
+.leaf-3,
+.leaf-4 {
   z-index: -1;
   position: absolute;
 }
@@ -90,7 +174,8 @@ table {
     bottom: -120px;
   }
 }
-.pageHome .home-meal .meal, .pageHome .home-meal div {
+.pageHome .home-meal .meal,
+.pageHome .home-meal div {
   width: 44rem;
   margin: 2rem 3rem;
   max-width: 100%;
@@ -264,7 +349,7 @@ table {
 
 header {
   width: 100%;
-  background-color: #000F0E;
+  background-color: #000f0e;
 }
 header div {
   width: 90%;
@@ -291,7 +376,8 @@ header div #menu-nav {
     display: none;
   }
 }
-header div #menu-nav a:nth-of-type(1), header div #menu-nav a:nth-of-type(2) {
+header div #menu-nav a:nth-of-type(1),
+header div #menu-nav a:nth-of-type(2) {
   margin-right: 6rem;
 }
 header div #menu-burger-nav {
@@ -301,7 +387,7 @@ header div #menu-burger-nav {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #000F0E;
+  background-color: #000f0e;
   height: 100%;
   width: 70%;
   flex-direction: column;
@@ -341,7 +427,7 @@ header div #burger-icon {
 
 footer {
   width: 100%;
-  background-color: #000F0E;
+  background-color: #000f0e;
 }
 footer section {
   width: 90%;
@@ -380,11 +466,13 @@ footer section nav {
     height: 16rem;
   }
 }
-footer section nav a:nth-of-type(1), footer section nav a:nth-of-type(2) {
+footer section nav a:nth-of-type(1),
+footer section nav a:nth-of-type(2) {
   margin-right: 6rem;
 }
 @media screen and (max-width: 768px) {
-  footer section nav a:nth-of-type(1), footer section nav a:nth-of-type(2) {
+  footer section nav a:nth-of-type(1),
+  footer section nav a:nth-of-type(2) {
     margin-right: 0;
   }
 }
@@ -407,19 +495,23 @@ footer section nav a:nth-of-type(1), footer section nav a:nth-of-type(2) {
   gap: 5px;
   padding: 50px 0;
 }
-.pageContact .wrap form input, form textarea{
+.pageContact .wrap form input,
+form textarea {
   border: none;
   outline: none;
 }
-.pageContact .wrap form input[type=text], .pageContact .wrap form input[type=email],.pageContact .wrap form input[type=tel], .pageContact .wrap form input[type=datetime-local], form textarea {
-  background-color: #F3F4F6;
+.pageContact .wrap form input[type="text"],
+.pageContact .wrap form input[type="email"],
+.pageContact .wrap form input[type="datetime-local"],
+form textarea {
+  background-color: #f3f4f6;
   padding: 10px 20px;
   resize: none;
 }
-form textarea{
+form textarea {
   height: 5rem;
 }
-.pageContact .wrap form input[type=submit] {
+.pageContact .wrap form input[type="submit"] {
   margin: auto;
   cursor: pointer;
   margin-top: 10px;
@@ -449,19 +541,22 @@ form textarea{
   font-family: SkullBones;
   src: url("../font/skullFont.ttf");
 }
-html, body {
+html,
+body {
   max-width: 100%;
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
 @media screen and (max-width: 768px) {
-  html, body {
+  html,
+  body {
     font-size: 10px;
   }
 }
 @media screen and (max-width: 640px) {
-  html, body {
+  html,
+  body {
     font-size: 8px;
   }
 }
@@ -495,10 +590,59 @@ h2 {
   width: fit-content;
   color: white;
   padding: 1rem 3rem;
-  background-color: #00C4B1;
+  background-color: #00c4b1;
   border-radius: 0.75rem;
   border: none;
   font-size: 1.75rem;
+}
+.menu {
+  width: 80%;
+  margin: 0px auto;
+}
+.menu-title {
+  font-family: "skullbones", sans-serif;
+  color: #0c807d;
+  text-align: center;
+}
+
+.menu-category {
+  font-family: "skullbones", sans-serif;
+  color: #b46a39;
+  text-align: center;
+  text-transform: lowercase;
+  font-size: 48px;
+}
+
+.menu-subCategory {
+  font-family: "skullbones", sans-serif;
+  color: #b46a39;
+  text-transform: lowercase;
+  font-size: 36px;
+  margin: 15px 0;
+}
+
+.menu-div {
+  margin-bottom: 50px;
+}
+
+.menu-name {
+  color: #007f7f;
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.menu-div > div {
+  font-size: 18px;
+}
+
+.menu-dishe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-price {
+  color: #b46a39;
 }
 
 /*# sourceMappingURL=style.css.map */
