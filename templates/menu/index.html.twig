@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MenuController!{% endblock %}
+
+{% block body %}
+
+<div>
+    <h1>Menu</h1>
+    {% for category in categories %}
+        <h2>{{ category.name }}</h2>
+
+        {% for subCategory in subCategories %}
+            {% if category.subCategory == subCategory.name %}
+                <h3>{{ subCategory.name }}</h3>
+
+                    {% for plat in plats %}
+                        {% if plat.category == category.name %}
+                            <h3>{{ plat.name }}</h3>
+                            {{ plat.description|raw }}
+                        {% endif %}
+                    {% endfor %}
+
+            {% endif %}
+        {% endfor %}
+
+    {% endfor %}
+</div>
+
+{% endblock %}
