@@ -17,12 +17,74 @@
             <div class="calendar">
                 <h3>Horaires</h3>
                 <div class="hours week">
-                    <p>LUNDI - VENDREDI</p>
-                    <p>07:30 - 00:00</p>
+                    <p>LUNDI</p>
+                    <p>
+                        {% if openings.Lundi == "" %}
+                            Fermé
+                        {% else %}
+                            {{ openings.Lundi }}
+                        {% endif %}
+                    </p>
                 </div>
-                <div class="hours weekend">
-                    <p>SAMEDI - DIMANCHE</p>
-                    <p>Fermé</p>
+                <div class="hours week">
+                    <p>MARDI</p>
+                    <p>
+                        {% if openings.Mardi == "" %}
+                            Fermé
+                        {% else %}
+                            {{ openings.Mardi }}
+                        {% endif %}
+                    </p>
+                </div>
+                <div class="hours week">
+                    <p>MERCREDI</p>
+                    <p>
+                        {% if openings.Mercredi == "" %}
+                            Fermé
+                        {% else %}
+                            {{ openings.Mercredi }}
+                        {% endif %}
+                    </p>
+                </div>
+                <div class="hours week">
+                    <p>JEUDI</p>
+                    <p>
+                        {% if openings.Jeudi == "" %}
+                            Fermé
+                        {% else %}
+                            {{ openings.Jeudi }}
+                        {% endif %}
+                    </p>
+                </div>
+                <div class="hours week">
+                    <p>VENDREDI</p>
+                    <p>
+                        {% if openings.Vendredi == "" %}
+                            Fermé
+                        {% else %}
+                            {{ openings.Vendredi }}
+                        {% endif %}
+                    </p>
+                </div>
+                <div class="hours week">
+                    <p>SAMEDI</p>
+                    <p>
+                        {% if openings.Samedi == "" %}
+                            Fermé
+                        {% else %}
+                            {{ openings.Samedi }}
+                        {% endif %}
+                    </p>
+                </div>
+                <div class="hours week">
+                    <p>DIMANCHE</p>
+                    <p>
+                        {% if openings.Dimanche == "" %}
+                            Fermé
+                        {% else %}
+                            {{ openings.Dimanche }}
+                        {% endif %}
+                    </p>
                 </div>
             </div>
         </div>
