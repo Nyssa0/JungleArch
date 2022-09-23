@@ -408,13 +408,17 @@ footer section nav a:nth-of-type(1), footer section nav a:nth-of-type(2) {
   gap: 5px;
   padding: 50px 0;
 }
-.pageContact .wrap form input {
+.pageContact .wrap form input, form textarea{
   border: none;
   outline: none;
 }
-.pageContact .wrap form input[type=text], .pageContact .wrap form input[type=email], .pageContact .wrap form input[type=datetime-local] {
+.pageContact .wrap form input[type=text], .pageContact .wrap form input[type=email], .pageContact .wrap form input[type=datetime-local], form textarea {
   background-color: #F3F4F6;
   padding: 10px 20px;
+  resize: none;
+}
+form textarea{
+  height: 5rem;
 }
 .pageContact .wrap form input[type=submit] {
   margin: auto;
